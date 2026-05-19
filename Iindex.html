@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workspace Inteligente</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Contenedor principal -->
+    <main class="app">
+
+        <!-- Header -->
+        <header class="app__header">
+            <h1 class="app__title">Workspace Inteligente</h1>
+            <p class="app__description">
+                Organiza tus tareas de forma simple y eficiente.
+            </p>
+        </header>
+
+        <!-- Sección para agregar tareas -->
+        <section class="task-form-section">
+
+            <form class="task-form" id="taskForm">
+
+                <label for="taskInput" class="sr-only">
+                    Escribe una tarea
+                </label>
+
+                <input type="text" id="taskInput" class="task-form__input" placeholder="Escribe una nueva tarea..."
+                    autocomplete="off" />
+
+                <button type="submit" class="task-form__button">
+                    Agregar
+                </button>
+
+            </form>
+
+        </section>
+
+        <!-- Filtros -->
+        <section class="filters-section">
+
+            <h2 class="section-title">
+                Filtrar tareas
+            </h2>
+
+            <div class="filters">
+
+                <button class="filter-btn active" data-filter="all">
+                    Todas
+                </button>
+
+                <button class="filter-btn" data-filter="pending">
+                    Pendientes
+                </button>
+
+                <button class="filter-btn" data-filter="completed">
+                    Completadas
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Información -->
+        <section class="task-info">
+
+            <p class="task-counter">
+                Tareas completadas:
+                <span id="completedCount">0</span>
+            </p>
+
+        </section>
+
+        <!-- Lista de tareas -->
+        <section class="tasks-section">
+
+            <h2 class="section-title">
+                Lista de tareas
+            </h2>
+
+            <ul class="task-list" id="taskList">
+
+                <!-- Tareas dinámicas -->
+
+            </ul>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>
