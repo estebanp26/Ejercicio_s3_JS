@@ -1,0 +1,59 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Carlos Manager",
+      "email": "manager@test.com",
+      "password": "123456",
+      "role": "manager"
+    },
+    {
+      "id": 2,
+      "name": "Ana Collaborator",
+      "email": "user@test.com",
+      "password": "123456",
+      "role": "collaborator"
+    },
+    {
+      "id": 3,
+      "name": "Luis Collaborator",
+      "email": "luis@test.com",
+      "password": "123456",
+      "role": "collaborator"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Website Redesign",
+      "description": "Complete redesign of the corporate website with modern UI/UX",
+      "status": "In Progress",
+      "createdAt": "2025-01-15",
+      "assignedTo": 2
+    },
+    {
+      "id": 2,
+      "name": "Mobile App MVP",
+      "description": "Build the minimum viable product for the mobile application",
+      "status": "Pending",
+      "createdAt": "2025-02-01",
+      "assignedTo": 3
+    },
+    {
+      "id": 3,
+      "name": "API Integration",
+      "description": "Integrate third-party payment APIs into the platform",
+      "status": "Completed",
+      "createdAt": "2025-01-10",
+      "assignedTo": 2
+    },
+    {
+      "id": 4,
+      "name": "Security Audit",
+      "description": "Full security audit of all internal systems",
+      "status": "In Progress",
+      "createdAt": "2025-03-01",
+      "assignedTo": 3
+    }
+  ]
+}
